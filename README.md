@@ -1,4 +1,4 @@
-# Regex Tutorial Starter Code# You Need to Learn Regular Expressions Right Now!
+# You Need to Learn Regular Expressions Right Now!
 
 This tutorial will cover Regular Expressions more commonly referred to as "RegEx". To me the most interesting aspect of RegEx is that it can be used in all*¹ programming languages. 
 RegEx can be considered a universal language of sorts due to this cross compatibility.<br>
@@ -32,6 +32,15 @@ In the following material we will cover what every bit of this wild looking synt
 <br>
 <br>
 
+### Lazy and Greedy
+<br>
+
+First although it may be difficult to understand just yet we should cover the "Lazy and Greedy" modifiers*².<br>
+The ` * ` symbol is known as a 'greedy' modifier. It functions as a 'zero or many' modifier.
+<br>
+
+The `.*? ` is know as a 'lazy' modifier. This is used to only match what is necessary to fulfill the giving search parameter. For example `.*?foo` would find one instance of 'foo' and then stop its search as it is now completed. This is also referred to as "Once or none".
+<br>
 
 ### Anchors
 <br>
@@ -46,10 +55,15 @@ Anchors are used to match the position of a character. This is useful for determ
 
 ### Quantifiers
 <br>
-In RegEx a quantifier is used to match the quantity of whatever precedes it. 
+
+In RegEx a quantifier is used to match the quantity of whatever precedes it. For example the syntax `R+` is using the `+` quantifier to 'one or many' letter "R"'s. <br>
+
+
+
+<br>
 
 ### OR Operator
-miner change
+
 ### Character Classes
 
 ### Flags
@@ -80,5 +94,6 @@ A short section about the author with a link to the author's GitHub profile (rep
 
 # Footnotes 
 
-  *¹  *Supported by most mainstream programming languages.*
+  *¹ *Supported by most mainstream programming languages.*<br>
+  *² *Modifier in this instance is interchangeable for quantifier.* <br>
 
