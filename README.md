@@ -131,6 +131,18 @@ Another common method used with square brackets is when searching for characters
 In this example→ `[A-Za-z0-9]` we are looking for all the upper and lowercase letters in the english alphabet and any number 0-9.
 
 ### Boundaries
+<br>
+
+We are going to take a look at a different but related example for the topic of boundries. For this we are going to look at years.↓
+<br>
+
+    1999-06-14
+    1996.12.21
+    1864 08 04
+    2022/01/01
+<br>
+
+Now say we just want the years from these dates one method we could use is a boundary→ `\b`. A simple way for find just the year would be wit the following example→ `\b\d\d\d\d\b` remember that `\d` is searching for a *digit* and the `\b` is a boundary. In this instance it would return "1999, 1996, 1864, and 2022" as whitespace, periods, slashes, and hyphens are all considered boundary characters.
 
 ### Back-references
 
