@@ -41,6 +41,7 @@ Anchors are used to match the position of a character. This is useful for determ
 
 #### Examples
 <br>
+
 `^` Is used to find a paramator at the start of a string or line - `^foo.*`
 
 ### Quantifiers
