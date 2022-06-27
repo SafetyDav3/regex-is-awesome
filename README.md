@@ -48,13 +48,14 @@ Anchors are used to match the position of a character. This is useful for determ
 <br>
 <br>
 
-#### Examples:
+#### *Examples:*
 
 `^` Is used to find a parameter at the start of a string or line - `^foo.*` <br>
 `$` Is used to find a parameter at the end of a string or line - `.*?bar$` <br>
 
 ### Quantifiers
 <br>
+
 The `?` and `*` discussed at the beginning of this list are actually quantifiers that were referred to at the time as 'modifiers'.<br>
 
 That information was covered here: [Lazy and Greedy Match](#lazy-and-greedy-match)
@@ -70,14 +71,18 @@ Now with that in mind we have the following: `X{3,}?`. Here we have a very simil
 <br>
 
 Finally we will take a look at this: `X{3}`. In this expression we would be looking for and only for 3 repeating X's. I.E. "XXX" no more and no less.
-
-
+<br>
 <br>
 
 ### OR Operator
 
-### Character Classes
+The "Or" operator works just like it sounds and is represented at the `|` symbol. Most comonly you will see this paired with `( )` to contain an or operator. So this: `(a|b)` would be searching for 'a' or 'b'. And this: `(a|b)c` would find any instance of 'ac' or 'bc'.
+<br>
 
+You can get a similar functionality from the square brackets `[ ]`, but with some key differences. First of all the `|` operator is not used with square brackets. To use the previous example with square brackets: `[ab]c` we would be searching for any instance of the letter 'c' preceded by either 'a' or 'b', but would not return 'a' or 'b' with the results. So if we had this string: "aaa babab caca" we would get a result of "c".
+
+### Character Classes
+S
 ### Flags
 
 ### Grouping and Capturing
