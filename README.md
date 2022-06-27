@@ -117,6 +117,18 @@ Multiple charactors may be treated as a group by using `( )`. Capture groups hav
 Our example expression at the top of the page has our RegEx in it's own capture group. The outer expressions dictate where to look for our combination of email validation expressions.
 
 ### Bracket Expressions
+<br>
+
+In RegEx we use square brackets `[]` to identify a list of characters.
+<br>
+
+Take the following example: `[XYZ]`.← This expression would find any instance of the uppercase 'X', 'Y', or 'Z' treating what's contained in the square brackets as a list. This method can be extremely useful when looking for a character that would normally dictate a regular expression itself. In this example→ `[^?${}[()]` we can see a lot of syntax that would normally trigger a regular expression, but here it gives us the ability to find these characters in a string or document.  
+<br>
+
+Another common method used with square brackets is when searching for characters within a range. 
+<br>
+
+In this example→ `[A-Za-z0-9]` we are looking for all the upper and lowercase letters in the english alphabet and any number 0-9.
 
 ### Boundaries
 
