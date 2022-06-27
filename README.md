@@ -8,9 +8,7 @@ The most common applications for RegEx are Find, replace, and validation of stri
 
 This tutorial os sorts will cover probably the most common use case for RegEx and that's email validation. Below is an example of an email validation Regular Expression.↓
 <br>
-<br>
     `/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/gm`
-<br>
 <br>
 In the following material we will cover what every bit of this wild looking syntax tells the program to do preform. And how to apply it many other scenario.
 
@@ -30,7 +28,6 @@ In the following material we will cover what every bit of this wild looking synt
 
 ## Regex Components
 <br>
-<br>
 
 ### Lazy and Greedy Match
 <br>
@@ -47,7 +44,6 @@ The `.*? ` is know as a 'lazy' modifier. This is used to only match what is nece
 
 Anchors are used to match the position of a character. This is useful for determining if a string starts, ends with, is preceded by, or followed by a character(s).
 <br>
-<br>
 
 #### *Examples:*
 
@@ -63,7 +59,6 @@ That information was covered here: [Lazy and Greedy Match](#lazy-and-greedy-matc
 
 In RegEx a quantifier is used to match the quantity of whatever precedes it. For example the syntax `R+` is using the `+` quantifier to 'one or many' letter "R"'s. 
 <br>
-<br>
 
 Next we will look at finding a range using a RegEx. Givin the following RegEx: `X{3,6}` we would here be searching for repeating "XXX"-"XXXXXX" as a range so if in a string you had "XXXX" it would also be included in the results. If you were to leave the last range value blank e.g.: `X{3,}` we would find any string containing "XXX" or more repeating "X" characters. This may sound familiar as it has the same functionality as using the `*` syntax*³ except for the caveat that you gt to specify how many repeating characters it must begin with.
 <br>
@@ -72,7 +67,6 @@ Now with that in mind we have the following: `X{3,}?`. Here we have a very simil
 <br>
 
 Finally we will take a look at this: `X{3}`. In this expression we would be looking for and only for 3 repeating X's. I.E. "XXX" no more and no less.
-<br>
 <br>
 
 ### OR Operator
@@ -93,7 +87,6 @@ Here we will take a lokk at a few examples:<br>
 * `\s` - Is used to find 'whitespace'.
 * `\t` - This is how you would find 'tabs'.
 * `\v` - And this is how to identify 'vertical whitespace'.
-<br>
 <br>
 
 For example when searching for a word preceded by the letter 'a', here we will use the example "a word". You could wright an expression as such: `a+\s\w` and find the instances of "a word". To get more in depth this would also return 'a ford', 'a cord', ect...
