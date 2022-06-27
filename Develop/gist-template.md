@@ -1,18 +1,10 @@
-# You Need to Learn Regular Expressions Right Now!
+# Title (replace with your title)
 
-This tutorial will cover Regular Expressions more commonly referred to as "RegEx". To me the most interesting aspect of RegEx is that it can be used in all*¹ programming languages. 
-RegEx can be considered a universal language of sorts due to this cross compatibility.<br>
-The most common applications for RegEx are Find, replace, and validation of string type data.  
+Introductory paragraph (replace this with your text)
 
 ## Summary
 
-This tutorial os sorts will cover probably the most common use case for RegEx and that's email validation. Below is an example of an email validation Regular Expression.↓
-<br>
-<br>
-    `/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/gm`
-<br>
-<br>
-In the following material we will cover what every bit of this wild looking syntax tells the program to do preform. And how to apply it many other scenario.
+Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
 ## Table of Contents
 
@@ -29,9 +21,6 @@ In the following material we will cover what every bit of this wild looking synt
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-<br>
-<br>
-
 
 ### Anchors
 
@@ -58,16 +47,3 @@ In the following material we will cover what every bit of this wild looking synt
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-# Footnotes 
-
-  *¹  *Supported by most mainstream programming languages.*
-
