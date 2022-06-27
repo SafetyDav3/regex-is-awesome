@@ -44,6 +44,7 @@ The `.*? ` is know as a 'lazy' modifier. This is used to only match what is nece
 
 ### Anchors
 <br>
+
 Anchors are used to match the position of a character. This is useful for determining if a string starts, ends with, is preceded by, or followed by a character(s).
 <br>
 <br>
@@ -82,7 +83,7 @@ The "Or" operator works just like it sounds and is represented at the `|` symbol
 You can get a similar functionality from the square brackets `[ ]`, but with some key differences. First of all the `|` operator is not used with square brackets. To use the previous example with square brackets: `[ab]c` we would be searching for any instance of the letter 'c' preceded by either 'a' or 'b', but would not return 'a' or 'b' with the results. So if we had this string: "aaa babab caca" we would get a result of "c".
 
 ### Character Classes
-S
+
 ### Flags
 
 ### Grouping and Capturing
