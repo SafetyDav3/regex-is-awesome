@@ -83,7 +83,21 @@ The "Or" operator works just like it sounds and is represented at the `|` symbol
 You can get a similar functionality from the square brackets `[ ]`, but with some key differences. First of all the `|` operator is not used with square brackets. To use the previous example with square brackets: `[ab]c` we would be searching for any instance of the letter 'c' preceded by either 'a' or 'b', but would not return 'a' or 'b' with the results. So if we had this string: "aaa babab caca" we would get a result of "c".
 
 ### Character Classes
+<br>
 
+Classes are 'words', 'whitespace', 'digits'*⁴, and `'.'` period along with other more specific targets like 'tabs'. <br>
+
+Here we will take a lokk at a few examples:<br>
+* `\w` - Is used to identify a 'word'.
+* `\d` - Is used to identify a 'digit'.
+* `\s` - Is used to find 'whitespace'.
+* `\t` - This is how you would find 'tabs'.
+* `\v` - And this is how to identify 'vertical whitespace'.
+<br>
+<br>
+
+For example when searching for a word preceded by the letter 'a', here we will use the example "a word". You could wright an expression as such: `a+\s\w` and find the instances of "a word". To get more in depth this would also return 'a ford', 'a cord', ect...
+ 
 ### Flags
 
 ### Grouping and Capturing
@@ -108,9 +122,11 @@ A short section about the author with a link to the author's GitHub profile (rep
 <br>
 <br>
 
-# Footnotes 
+#### Footnotes 
+***
 
   *¹ *Supported by most mainstream programming languages.*<br>
   *² *Modifier in this instance is interchangeable for quantifier.* <br>
-  *³ *Greedy*
+  *³ *Greedy*<br>
+  *⁴ *Numbers or Integers*
 
