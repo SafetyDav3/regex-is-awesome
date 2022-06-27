@@ -99,8 +99,29 @@ Here we will take a lokk at a few examples:<br>
 For example when searching for a word preceded by the letter 'a', here we will use the example "a word". You could wright an expression as such: `a+\s\w` and find the instances of "a word". To get more in depth this would also return 'a ford', 'a cord', ect...
  
 ### Flags
+<br>
+
+Regular expressions include optional flags that enable features like case-insensitive and global searches. These flags, which are a component of the regular expression, can be used individually or collectively in any combination.
+<br>
+
+Some examples:
+
+* `g` - This denotes a Global search.
+* `m` - The "m" parameter is for "multi-line searches"
+* `i` - Use the 'i' flag to invoke "case-insensitivity"
+
+These flags are used at the end of a regular expression preceded by a forward slash '`/`'. A great example is in our orignal example:<br>  `/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/gm` ← Right at the very end we see an example of the flags in use. The `g` flag is using a global search that will look for all matches. Whithout the `g` flag it would only return the first result. Next we have the `m` flag which is using the 'multi-line' mode to be able to match content even if the strings are broken by breaks such as `<br>`. 
 
 ### Grouping and Capturing
+<br>
+
+Multiple charactors may be treated as a group by using `( )`. Capture groups have several configuations:
+* `(X)`
+* `(X(Y))`
+* `(foo(X(Y)))`
+<br>
+
+Our example expression at the top of the page has our RegEx in it's own capture group. The outer expressions dictate where to look for our combination of email validation expressions.
 
 ### Bracket Expressions
 
