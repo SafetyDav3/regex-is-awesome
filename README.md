@@ -34,6 +34,14 @@ In the following material we will cover what every bit of this wild looking synt
 
 
 ### Anchors
+<br>
+Anchors are used to match the position of a character. This is useful for determining if a string starts, ends with, is preceded by, or followed by a character(s).
+<br>
+<br>
+
+#### Examples
+<br>
+`^` Is used to find a paramator at the start of a string or line - `^foo.*`
 
 ### Quantifiers
 
