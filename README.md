@@ -16,6 +16,7 @@ In the following material we will cover what every bit of this wild looking synt
 
 ## Table of Contents
 
+- [Lazy and Greedy Match](#lazy-and-greedy-match)
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
@@ -23,7 +24,6 @@ In the following material we will cover what every bit of this wild looking synt
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
@@ -32,7 +32,7 @@ In the following material we will cover what every bit of this wild looking synt
 <br>
 <br>
 
-### Lazy and Greedy
+### Lazy and Greedy Match
 <br>
 
 First although it may be difficult to understand just yet we should cover the "Lazy and Greedy" modifiers*².<br>
@@ -55,9 +55,21 @@ Anchors are used to match the position of a character. This is useful for determ
 
 ### Quantifiers
 <br>
+The `?` and `*` discussed at the beginning of this list are actually quantifiers that were referred to at the time as 'modifiers'.<br>
 
-In RegEx a quantifier is used to match the quantity of whatever precedes it. For example the syntax `R+` is using the `+` quantifier to 'one or many' letter "R"'s. <br>
+That information was covered here: [Lazy and Greedy Match](#lazy-and-greedy-match)
 
+In RegEx a quantifier is used to match the quantity of whatever precedes it. For example the syntax `R+` is using the `+` quantifier to 'one or many' letter "R"'s. 
+<br>
+<br>
+
+Next we will look at finding a range using a RegEx. Givin the following RegEx: `X{3,6}` we would here be searching for repeating "XXX"-"XXXXXX" as a range so if in a string you had "XXXX" it would also be included in the results. If you were to leave the last range value blank e.g.: `X{3,}` we would find any string containing "XXX" or more repeating "X" characters. This may sound familiar as it has the same functionality as using the `*` syntax*³ except for the caveat that you gt to specify how many repeating characters it must begin with.
+<br>
+
+Now with that in mind we have the following: `X{3,}?`. Here we have a very similar expression it acts as a *lazy* version of the same syntax. So here it would find the instance one time and be complete. 
+<br>
+
+Finally we will take a look at this: `X{3}`. In this expression we would be looking for and only for 3 repeating X's. I.E. "XXX" no more and no less.
 
 
 <br>
@@ -71,8 +83,6 @@ In RegEx a quantifier is used to match the quantity of whatever precedes it. For
 ### Grouping and Capturing
 
 ### Bracket Expressions
-
-### Greedy and Lazy Match
 
 ### Boundaries
 
@@ -96,4 +106,5 @@ A short section about the author with a link to the author's GitHub profile (rep
 
   *¹ *Supported by most mainstream programming languages.*<br>
   *² *Modifier in this instance is interchangeable for quantifier.* <br>
+  *³ *Greedy*
 
